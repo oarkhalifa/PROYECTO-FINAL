@@ -1,0 +1,298 @@
+:root{
+  --primary: #06F9CE;
+  --secondary: #fff;
+  --primary-09: rgba(6,249,206, .9);
+  --primary-05: rgba(253,125,202, .5);
+
+  --text: #F56276;
+  --text-secondary: #fff;
+
+  --body-color: #f2f2f2;
+
+  --border-radius: 7px;
+  --border-radius-big: 14px;
+ --box-shadow: 0 0 6px 4px White;
+ 
+}
+
+html, body, *, *::after, *::before{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+* { 
+            padding:0px;
+            margin: 0px;
+            
+        }
+
+* {
+    box-sizing: border-box;
+    
+}
+
+body{
+    margin: 0;
+    background: #f7f3fa; 
+}
+
+.circulos{
+    width: 250px;
+    height: 300px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius:10px;
+    
+}
+
+
+/**#principal{
+    width: 900px;
+    height: 1000px;
+    border: 1px solid #000;
+    margin: auto;
+}*/
+
+
+.banner{
+    width: 100%;
+    height: 40px;
+   /* border: 5px solid #f8aaeb;*/
+    background-color: #f8aaeb;
+    border-radius:5%;
+   /* margin: auto;*/
+  }
+
+ 
+.fondo{
+    background-color: dodgerblue;
+}
+/*/////////////////////////////////////////////////////////////////////////////////////*/
+.borde{
+    border-style: solid;
+   /* border-color: #00c3af;*/
+    max-width: 1200px;  
+    background-color: #d2d2d2;
+    border-width: 0px;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.borde1{
+    border-style: solid;
+    height: 200px;
+    width: auto;
+   /* border-color: #00c3af;*/
+    background-color: rgba(6,249,206, .3);
+    border-width: 0px;
+    border-radius: 50px;
+        
+}
+
+.borde2{
+    
+    border-style: solid;
+      max-width: 1200px;
+    min-width: 400px;
+    margin: 0 auto;
+      overflow:hidden;
+     padding:20px;  
+   /* border-color: #00c3af;*/
+    background-color: rgba(6,249,206, .3);
+    border-width: 0px;
+    border-radius: 10px;
+        
+}
+
+
+
+/*.borde3 {
+margin:0 0 25px;
+overflow:hidden;
+padding:20px;
+background-color:#6BD5F1;
+border:1px solid #afcde3;
+-webkit-border-radius: 5px;
+border-radius: 15px;
+}*/
+
+/*//////////////////////////////////////////////////////////////////////////////////*/
+#video{
+    
+}
+
+/*/////////////////////////////////////////////////////////////////////////////////////*/
+
+
+.color{
+      background-color: rgba(253,125,202, .5);
+}
+
+.imagenes{
+background-color: #ffffff;
+padding: 5px 10px 5px 10px;
+margin:2px;
+float:left;
+width:200px;
+text-align:center;
+}
+
+ #Xvideo{
+  /*position:  center;*/
+    margin-left: 20px;
+    right: 10;
+    bottom: 0;
+    min-width: 10%;
+    min-height: 10%;
+    height: 200px;
+    z-index: 10;
+   /* background: url(video/Huawei_Mate_30.mp4)no-repeat; */
+    background-size: cover;
+    
+    
+    
+}
+.espacios{
+    margin-top: 50px;
+}
+
+.espacio{
+    margin-left: 50px;
+}
+
+video{
+    
+    display: block;
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+}
+/*}
+
+div#posiciones{
+    margin: auto;
+    margin-top: 50px;
+    
+    width: 200px;
+    height: 200px;
+    
+}*/
+ /*-----------------------------------------------*/   
+
+
+/*/////////////////////////////////////////////////////////////////*/
+
+
+.card{
+  position: relative;
+  width: 15.45rem;
+  height: 25rem;
+  overflow: hidden;
+  border-radius: var(--border-radius-big);
+  border: 1px solid gainsboro;
+  
+}
+
+
+    
+.card-img{
+  height: calc(100% - 8rem);
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-name{
+  text-align: center;
+  font-size: 1rem;
+  line-height: 10rem;
+}
+
+.card-description{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: calc(100% - 4rem);
+  text-align: center;
+  background-color: var(--primary-05);
+  color: #000000;
+  font-size: 0.8rem;
+  line-height: 1.5rem;
+  transform: translateY(-100%);
+  transition: transform .3s;
+}
+.card:hover .card-description{
+  transform: translateY(0);
+}
+
+/*-------------------------------------*/
+.gallery-container{
+  width: 90%;
+  margin: 0 auto;
+  padding: 1rem 0;
+  background-color: #d2d2d2; 
+  box-shadow: var(--box-shadow);
+  border-radius: var(--border-radius);
+  margin-bottom: 1rem;
+}
+
+.gallery-container--content{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 15.45rem);
+  grid-template-rows: repeat(auto-fit, 25rem);
+  grid-auto-flow: row;
+  grid-auto-rows: 25rem;
+  grid-gap: 2rem;
+  align-items: stretch;
+  justify-content: space-evenly;
+  margin: 1rem;
+}
+.gallery-container--content.docentes{
+  grid-template-columns: repeat(3, 15.45rem);
+}
+/*--------------------------------------------------*/
+div.gallery {
+  margin: 5px;
+  border: 0px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 0px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+
+/*//////////////////////////////////////////////////////////////////////////////////////*/
+
+
+.gallery-container1--content{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 15.45rem);
+  grid-template-rows: repeat(auto-fit, 15rem);
+  grid-auto-flow: row;
+  grid-auto-rows: 15rem;
+  grid-gap: 2rem;
+  align-items: stretch;
+  justify-content: space-evenly;
+  margin: 3rem;
+}
+.gallery-container1--content.docentes{
+  grid-template-columns: repeat(3, 15.45rem);
+}
+
+/*//////////////////////////////////////////////////////////////////////////////*/
+
